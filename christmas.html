@@ -45,6 +45,7 @@
             font-weight: bold;
         }
     </style>
+<script src="Scripts/swfobject_modified.js"></script>
 </head>
 <body>
     <div class="container">
@@ -53,11 +54,40 @@
 
         <!-- Video Natal -->
         <video controls autoplay muted loop>
-            <source src="Cinematic_Video_Compressed.mp4" type="video/mp4">
-		</video>
-
+            <source src="" type="video/mp4">
+      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="300" height="300" id="FLVPlayer">
+              <param name="movie" value="FLVPlayer_Progressive.swf" />
+              <param name="quality" value="high">
+              <param name="wmode" value="opaque">
+              <param name="scale" value="noscale">
+              <param name="salign" value="lt">
+              <param name="FlashVars" value="&amp;MM_ComponentVersion=1&amp;skinName=Clear_Skin_1&amp;streamName=../Downloads/Cinematic_Video_Opening_Ibadah_Natal__Spesial_Natal&amp;autoPlay=true&amp;autoRewind=true" />
+              <param name="swfversion" value="8,0,0,0">
+              <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+              <param name="expressinstall" value="Scripts/expressInstall.swf">
+              <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+              <!--[if !IE]>-->
+              <object type="application/x-shockwave-flash" data="FLVPlayer_Progressive.swf" width="300" height="300">
+                <!--<![endif]-->
+                <param name="quality" value="high">
+                <param name="wmode" value="opaque">
+                <param name="scale" value="noscale">
+                <param name="salign" value="lt">
+                <param name="FlashVars" value="&amp;MM_ComponentVersion=1&amp;skinName=Clear_Skin_1&amp;streamName=../Downloads/Cinematic_Video_Opening_Ibadah_Natal__Spesial_Natal&amp;autoPlay=true&amp;autoRewind=true" />
+                <param name="swfversion" value="8,0,0,0">
+                <param name="expressinstall" value="Scripts/expressInstall.swf">
+                <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                <div>
+                  <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                  <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+                </div>
+                <!--[if !IE]>-->
+              </object>
+              <!--<![endif]-->
+            </object>
+			
         <!-- Ayat Alkitab -->
-        <h2>“Kemuliaan bagi Allah di tempat yang mahatinggi dan damai sejahtera di bumi di antara manusia yang berkenan kepada-Nya.”</h2>
+      <h2>“Kemuliaan bagi Allah di tempat yang mahatinggi dan damai sejahtera di bumi di antara manusia yang berkenan kepada-Nya.”</h2>
         <p class="highlight">Lukas 2:14</p>
 
         <!-- Nama Pemberi -->
@@ -69,5 +99,8 @@
             <p>Semoga Natal membawa kedamaian, sukacita, dan berkat yang melimpah bagi kita semua. Tuhan Yesus memberkati! 🎁</p>
         </div>
     </div>
+<script type="text/javascript">
+swfobject.registerObject("FLVPlayer");
+    </script>
 </body>
 </html>
