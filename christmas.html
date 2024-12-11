@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Natal - Yonanda Satriyo Purnomo</title>
+    <style>
+        /* Gaya Halaman Utama */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #0b3d91, #162447);
+            color: #fff;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        /* Efek Salju */
+        @keyframes snow {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(100vh); }
+        }
+
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            color: #fff;
+            font-size: 1em;
+            user-select: none;
+            pointer-events: none;
+            animation: snow linear infinite;
+        }
+
+        .snowflake:nth-child(odd) { opacity: 0.8; }
+        .snowflake:nth-child(even) { opacity: 0.6; }
+
+        /* Judul dengan Efek Glow */
+        h1 {
+            font-size: 3.5em;
+            margin-top: 20px;
+            text-shadow: 0 0 10px #ffdd57, 0 0 20px #ffdd57, 0 0 30px #ff9e57;
+            animation: fadeIn 3s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Ayat Alkitab */
+        h2 {
+            font-size: 1.5em;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px 20px;
+            display: inline-block;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            animation: fadeIn 4s ease-out;
+        }
+
+        /* Video dengan Efek */
+        video {
+            width: 90%;
+            max-width: 800px;
+            border: 5px solid #ffdd57;
+            border-radius: 15px;
+            box-shadow: 0 0 15px #ffdd57;
+            animation: fadeIn 5s ease-out;
+        }
+
+        /* Nama Pemberi */
+        .highlight {
+            color: #ffdd57;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 20px;
+            animation: fadeIn 5s ease-out;
+        }
+
+        /* Pesan Tambahan */
+        .footer {
+            font-size: 1em;
+            margin-top: 30px;
+            font-style: italic;
+            text-shadow: 0 0 5px #fff;
+            animation: fadeIn 6s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Efek Salju -->
+    <div class="snowflake" style="left: 10%; animation-duration: 10s;">❄</div>
+    <div class="snowflake" style="left: 20%; animation-duration: 12s;">❅</div>
+    <div class="snowflake" style="left: 30%; animation-duration: 15s;">❄</div>
+    <div class="snowflake" style="left: 40%; animation-duration: 9s;">❅</div>
+    <div class="snowflake" style="left: 50%; animation-duration: 13s;">❄</div>
+    <div class="snowflake" style="left: 60%; animation-duration: 14s;">❅</div>
+    <div class="snowflake" style="left: 70%; animation-duration: 11s;">❄</div>
+    <div class="snowflake" style="left: 80%; animation-duration: 10s;">❅</div>
+    <div class="snowflake" style="left: 90%; animation-duration: 12s;">❄</div>
+
+    <!-- Judul Utama -->
+    <h1>Selamat Hari Natal 🎄</h1>
+
+    <!-- Video -->
+    <video controls autoplay muted loop>
+        <source src= "../Downloads/Cinematic_Video_Opening_Ibadah_Natal__Spesial_Natal.flv" type="video/mp4">
+    </video>
+
+    <!-- Ayat Alkitab -->
+    <h2>“Kemuliaan bagi Allah di tempat yang mahatinggi dan damai sejahtera di bumi di antara manusia yang berkenan kepada-Nya.”</h2>
+    <p class="highlight">Lukas 2:14</p>
+
+    <!-- Nama Pemberi -->
+    <p class="highlight">Yonanda Satriyo Purnomo</p>
+
+    <!-- Pesan Tambahan -->
+    <div class="footer">
+        <p>Semoga Natal ini membawa kedamaian, sukacita, dan berkat melimpah untuk kita semua. Tuhan Yesus Memberkati! 🎁</p>
+    </div>
+</body>
+</html>
